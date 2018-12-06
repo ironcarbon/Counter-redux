@@ -35,11 +35,22 @@ export const subtract_five = (val) => {
     }
 }
 
-export const store_results = (res) => {
+
+
+export const saveResult = (res) => {
     return {
         type: STORE_RESULTS,
         result: res
     }
+}
+
+export const store_results = (res) => {
+    return dispatch => {
+        setTimeout(() => {
+            dispatch(saveResult(res));
+        }, 5000);
+    }
+
 }
 
 export const delete_results = (id) => {
