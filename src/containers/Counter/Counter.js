@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import * as actionCreators from '../../store/actions/actions';
-
+import * as actionCreators from '../../store/actions/index.js';
 
 
 import CounterControl from '../../components/CounterControl/CounterControl';
 import CounterOutput from '../../components/CounterOutput/CounterOutput';
-import * as actionTypes from '../../store/actions/actions';
+// import * as actionTypes from '../../store/actions/actionTypes';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+// import { bindActionCreators } from 'redux';
 
 class Counter extends Component {
     //    state = {
